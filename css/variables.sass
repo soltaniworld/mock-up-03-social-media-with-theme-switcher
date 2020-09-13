@@ -1,0 +1,37 @@
+// ---- VARIABLES ----
+$themeTransitionTime: 0s
+// ---- COLORS ----
+  
+// Primary Theme
+$LimeGreen: hsl(163, 72%, 41%)
+$BrightRed: hsl(356, 69%, 56%)
+
+// Social Media colors
+$social_Facebook: hsl(208, 92%, 53%)
+$social_Twitter: hsl(203, 89%, 53%)
+$social_Instagram: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%))
+$social_YouTube: hsl(348, 97%, 39%)
+
+// Dark Theme
+$d_BG_VeryDarkBlue:             hsl(230, 17%, 14%) // Background
+$d_BG_top_VeryDarkBlue:         hsl(232, 19%, 15%)  //top pattern
+$d_BG_card_DarkDesaturatedBlue: hsl(228, 28%, 20%) //Card BG
+$d_Text_DesaturatedBlue:        hsl(228, 34%, 66%) //first text 
+$d_Text_White:                  hsl(0, 0%, 100%) //second text 
+$d_Toggle: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%)) //should start from bottom left and go up right.
+
+// Light Theme
+$l_BG_White:                  hsl(0, 0%, 100%) // Background
+$l_BG_top_VeryPaleBlue:       hsl(225, 100%, 98%) // top Pattern
+$l_BG_card_LightGrayishBlue:  hsl(227, 47%, 96%) //Card BG
+$l_Text_DarkGrayishBlue:      hsl(228, 12%, 44%) //first text
+$l_Text_VeryDarkBlue:         hsl(230, 17%, 14%) //second text 
+$l_Toggle:                    hsl(230, 22%, 74%)
+
+// ---- MIXINS ----
+
+// Set media query for screen size with minimum width for desktop
+$DesktopMinWidth: 500px
+@mixin setDesktop
+  @media screen and ( min-width: $DesktopMinWidth)
+    @content

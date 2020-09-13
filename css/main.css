@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  border-radius: 12px;
+}
+
+.toggle-switch--light {
+  background: #aeb3cb;
+}
+
+.toggle-switch--dark {
+  background-image: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background-image: linear-gradient(90deg, #378fe6, #3eda82);
+}
+
+.toggle-switch__input {
+  display: none;
+}
+
+.toggle-switch__slider {
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  top: 3px;
+  right: 3px;
+}
+
+.toggle-switch__slider--light {
+  background: #f0f2fa;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.toggle-switch__slider--dark {
+  background: #252a41;
+  -webkit-transform: translateX(-24px);
+          transform: translateX(-24px);
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container--light {
+  background: white;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.container--dark {
+  background: #1e202a;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    width: 1440px;
+    height: 800px;
+  }
+}
+
+.container__top-pattern {
+  position: absolute;
+  width: 100%;
+  height: 235px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  top: 0;
+  z-index: 0;
+}
+
+.container__top-pattern--light {
+  background: #f5f7ff;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.container__top-pattern--dark {
+  background: #1f212e;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  border: 1px solid #000;
+  padding: 0 24px 0 24px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 500px) {
+  .wrapper {
+    padding: 0 165px 0 165px;
+  }
+}
+
+.card {
+  border: 1px solid #000;
+}
+
+.card--light {
+  background: #f0f2fa;
+  color: #63687e;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.card--dark {
+  background: #252a41;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

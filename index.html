@@ -6,78 +6,180 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Social media dashboard with theme switcher</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./js/main.js" defer></script>
 </head>
 <body>
+  <div class="container container--light">
+    <div class="container__top-pattern container__top-pattern--light"></div>
 
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
+    <div class="wrapper wrapper--main">
+      <div class="total">
+        <p class="total-title">
+          Social Media Dashboard
+        </p>
+        <p class="total-follows">
+          Total Followers: 23,004
+        </p>
+      </div>
+    
+      <div class="toggle-container">
+        <label for="toggle" class="toggle-label">Dark Mode</label>
+        <label class="toggle-switch toggle-switch--light">
+          <input type="checkbox" class="toggle-switch__input" id="toggle">
+          <span class="toggle-switch__slider toggle-switch__slider--light"></span>
+        </label>
+      </div>
+    </div>
 
   
+    <div class="wrapper wrapper--total">
+      <div class="card card--overall card--light">
+        <div class="overall-social-handler">
+          <div class="overall-social-handler__icon icon">&&fb</div>
+          <div class="overall-social-handler__tag">@nathanf</div>
+        </div>
+        <div class="overall-following">1987</div>
+        <div class="overall-following-title">Followers</div>
+        <div class="overall-change overall-change--up">
+          <div class="icon-change icon-change--up">/\</div>
+          <div class="overall-change-date">12 Today</div>
+        </div>
+      </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <div class="card card--overall card--light">
+        <div class="overall-social-handler">
+          <div class="overall-social-handler__icon icon">&&ig</div>
+          <div class="overall-social-handler__tag">@nathanf</div>
+        </div>
+        <div class="overall-following">1044</div>
+        <div class="overall-following-title">Followers</div>
+        <div class="overall-change overall-change--up">
+          <div class="icon-change icon-change--up">/\</div>
+          <div class="overall-change-date">99 Today</div>
+        </div>
+      </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="card card--overall card--light">
+        <div class="overall-social-handler">
+          <div class="overall-social-handler__icon icon">&&tw</div>
+          <div class="overall-social-handler__tag">@realnathanf</div>
+        </div>
+        <div class="overall-following">11k</div>
+        <div class="overall-following-title">Followers</div>
+        <div class="overall-change overall-change--up">
+          <div class="icon-change icon-change--up">/\</div>
+          <div class="overall-change-date">1099 Today</div>
+        </div>
+      </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+      <div class="card card--overall card--light">
+        <div class="overall-social-handler">
+          <div class="overall-social-handler__icon icon">&&yt</div>
+          <div class="overall-social-handler__tag">Nathan F.</div>
+        </div>
+        <div class="overall-following">8239</div>
+        <div class="overall-following-title">Subscribers</div>
+        <div class="overall-change overall-change--down">
+          <div class="icon-change icon-change--down">/\</div>
+          <div class="overall-change-date">144 Today</div>
+        </div>
+      </div> 
+    </div>
+  
+  
+    <div class="wrapper wrapper--daily-stats">
+      <p>
+        Overview - Today
+      </p>
+    </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+    <div class="wrapper wrapper--daily">
+      <div class="card card--daily daily card--light">
+        <div class="daily__stats-title">Page Views</div>
+        <div class="daily__icon">&&fb</div>
+        <div class="daily__stats-count">87</div>
+        <div class="daily__stats-change">
+          <div class="icon-change icon-change--up">/\</div>
+          <div class="daily__stats-change-percent">3%</div>
+        </div>
+      </div>
 
+      <div class="card card--daily daily card--light">
+        <div class="daily__stats-title">Likes</div>
+        <div class="daily__icon">&&fb</div>
+        <div class="daily__stats-count">52</div>
+        <div class="daily__stats-change">
+          <div class="icon-change icon-change--down">\/</div>
+          <div class="daily__stats-change-percent">2%</div>
+        </div>
+      </div>
 
+      <div class="card card--daily daily card--light">
+        <div class="daily__stats-title">likes</div>
+        <div class="daily__icon">&&ig</div>
+        <div class="daily__stats-count">5462</div>
+        <div class="daily__stats-change">
+          <div class="icon-change icon-change--up">/\</div>
+          <div class="daily__stats-change-percent">2257%</div>
+        </div>
+      </div>
 
-  Overview - Today
+      <div class="card card--daily daily card--light">
+        <div class="daily__stats-title">Profile Views</div>
+        <div class="daily__icon">&&ig</div>
+        <div class="daily__stats-count">52k</div>
+        <div class="daily__stats-change">
+          <div class="icon-change icon-change--up">/\</div>
+          <div class="daily__stats-change-percent">1375%</div>
+        </div>
+      </div>
 
-  Page Views
-  87
-  3%
+      <div class="card card--daily daily card--light">
+        <div class="daily__stats-title">Retweets</div>
+        <div class="daily__icon">&&tw</div>
+        <div class="daily__stats-count">117</div>
+        <div class="daily__stats-change">
+          <div class="icon-change icon-change--up">/\</div>
+          <div class="daily__stats-change-percent">303%</div>
+        </div>
+      </div>
 
-  Likes
-  52
-  2%
+      <div class="card card--daily daily card--light">
+        <div class="daily__stats-title">Likes</div>
+        <div class="daily__icon">&&tw</div>
+        <div class="daily__stats-count">507</div>
+        <div class="daily__stats-change">
+          <div class="icon-change icon-change--up">/\</div>
+          <div class="daily__stats-change-percent">553%</div>
+        </div>
+      </div>
 
-  Likes
-  5462
-  2257%
+      <div class="card card--daily daily card--light">
+        <div class="daily__stats-title">Likes</div>
+        <div class="daily__icon">&&yt</div>
+        <div class="daily__stats-count">107</div>
+        <div class="daily__stats-change">
+          <div class="icon-change icon-change--down">\/</div>
+          <div class="daily__stats-change-percent">19%</div>
+        </div>
+      </div>
 
-  Profile Views
-  52k
-  1375%
+      <div class="card card--daily daily card--light">
+        <div class="daily__stats-title">Total Views</div>
+        <div class="daily__icon">&&yt</div>
+        <div class="daily__stats-count">1407</div>
+        <div class="daily__stats-change">
+          <div class="icon-change icon-change--down">\/</div>
+          <div class="daily__stats-change-percent">12%</div>
+        </div>
+      </div>
 
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
