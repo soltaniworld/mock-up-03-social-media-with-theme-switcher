@@ -132,8 +132,61 @@
   }
 }
 
+.wrapper--main {
+  height: 191px;
+}
+
+.total {
+  height: 110px;
+  border-bottom: 1px solid #000;
+}
+
+.total-title {
+  margin-top: 36px;
+}
+
+.total-follows {
+  margin-top: 4px;
+}
+
+.toggle-container {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .card {
   border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.card-top {
+  width: 100%;
+  height: 4px;
+}
+
+.card-top--facebook {
+  background: #198ff5;
+}
+
+.card-top--instagram {
+  background: linear-gradient(45deg, #fdc468, #df4996);
+}
+
+.card-top--twitter {
+  background: #1ca0f2;
+}
+
+.card-top--youtube {
+  background: #c4032a;
 }
 
 .card--light {
@@ -146,5 +199,54 @@
 .card--dark {
   background: #252a41;
   color: white;
+}
+
+.card--overall {
+  height: 216px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.card--overall:last-child {
+  margin-bottom: 0px;
+}
+
+.card .overall-social-handler {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card .overall-following {
+  margin-top: 28px;
+}
+
+.card .overall-following-title {
+  margin-top: 9px;
+}
+
+.card .overall-change {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=main.css.map */

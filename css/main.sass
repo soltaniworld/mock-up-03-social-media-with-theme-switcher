@@ -92,10 +92,39 @@
   z-index: 1
   @include setDesktop
     padding: 0 165px 0 165px
+  &--main
+    height: 191px
 
+
+// || TITLE BAR WITH TOGGLE
+.total
+  height: 110px
+  border-bottom: 1px solid #000
+  &-title
+    margin-top: 36px
+  &-follows
+    margin-top: 4px
+
+.toggle-container
+  margin-top: 16px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
 // || CARDS
 .card
   border: 1px solid #000  // DELETE
+  border-radius: 5px
+  &-top
+    width: 100%
+    height: 4px
+    &--facebook
+      background: $social_Facebook
+    &--instagram
+      background: $social_Instagram
+    &--twitter
+      background: $social_Twitter
+    &--youtube
+      background: $social_YouTube
   &--light
     background: $l_BG_card_LightGrayishBlue
     color: $l_Text_DarkGrayishBlue
@@ -103,4 +132,28 @@
   &--dark
     background: $d_BG_card_DarkDesaturatedBlue
     color: $d_Text_White
-  
+  &--overall
+    height: 216px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 24px
+  &--overall:last-child
+    margin-bottom: 0px
+
+  // || OVERALL Card Content
+  .overall
+    &-social-handler
+      margin-top: 32px
+      display: flex
+      flex-direction: row
+    &-following
+      margin-top: 28px
+      &-title
+        margin-top: 9px
+    &-change
+      margin-top: 25px
+      display: flex
+      flex-direction: row
+
+
