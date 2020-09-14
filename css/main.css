@@ -73,6 +73,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-width: 326px;
 }
 
 .container--light {
@@ -248,5 +249,43 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.overview-title {
+  margin-top: 46px;
+  margin-bottom: 27px;
+}
+
+.card--daily {
+  margin-bottom: 16px;
+  height: 125px;
+}
+
+.daily {
+  position: relative;
+}
+
+.daily__stats-title {
+  position: absolute;
+  top: 27px;
+  left: 24px;
+}
+
+.daily__icon {
+  position: absolute;
+  top: 26px;
+  right: 31px;
+}
+
+.daily__stats-count {
+  position: absolute;
+  bottom: 19px;
+  left: 24px;
+}
+
+.daily__stats-change {
+  position: absolute;
+  right: 31px;
+  bottom: 24px;
 }
 /*# sourceMappingURL=main.css.map */
