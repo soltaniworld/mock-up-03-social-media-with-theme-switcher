@@ -14,6 +14,20 @@
   // Body Copy
   // Font size (Overview Card Headings): 14px
 
+.text
+  &-blackwhite
+    &--light
+      color: $l_Text_VeryDarkBlue
+      transition: $themeTransitionTime
+    &--dark
+      color: $d_Text_White
+  &-gray
+    font-weight: 700
+    &--light
+      color: $l_Text_DarkGrayishBlue
+      transition: $themeTransitionTime
+    &--dark
+      color: $d_Text_DesaturatedBlue
 // || FOOTNOTE
 // the very end, buttom of the page.
 .attribution 
@@ -100,9 +114,16 @@
 // || TITLE BAR WITH TOGGLE
 .total
   height: 110px
-  border-bottom: 1px solid #000
+  &--light
+    border-bottom: 1px solid $l_Text_DarkGrayishBlue
+    transition: $themeTransitionTime
+  &--dark
+    border-bottom: 1px solid $d_Text_DesaturatedBlue
   &-title
     margin-top: 36px
+    font-weight: 700
+    font-size: 24px
+    letter-spacing: 0px
   &-follows
     margin-top: 4px
 
@@ -133,7 +154,7 @@
     transition: $themeTransitionTime
   &--dark
     background: $d_BG_card_DarkDesaturatedBlue
-    color: $d_Text_White
+    color: $d_Text_DesaturatedBlue
   &--overall
     height: 216px
     display: flex
@@ -143,27 +164,38 @@
   &--overall:last-child
     margin-bottom: 0px
 
-  // || OVERALL Card Content
-  .overall
-    &-social-handler
-      margin-top: 32px
-      display: flex
-      flex-direction: row
-    &-following
-      margin-top: 28px
-      &-title
-        margin-top: 9px
-    &-change
-      margin-top: 25px
-      display: flex
-      flex-direction: row
+// || OVERALL Card Content
+.overall
+  &-social-handler
+    margin-top: 32px
+    display: flex
+    flex-direction: row
+    align-items: center
+    &__icon
+      margin-right: 8px
+  &-following
+    margin-top: 28px
+    &-title
+      margin-top: 9px
+  &-change
+    margin-top: 25px
+    display: flex
+    flex-direction: row
+    align-items: center
+    &--up
+      color: $LimeGreen
+    &--down
+      color: $BrightRed
+    &-date
+      margin-left: 4px
+      font-size: 12px
   
   // || OVERVIEW TITLE
 .overview-title
   margin-top: 46px
   margin-bottom: 27px
 
-// || OVERVIEW CARDS
+// || DAILY OVERVIEW CARDS
 .card
   &--daily
     margin-bottom: 16px
@@ -186,3 +218,34 @@
     position: absolute
     right: 31px
     bottom: 24px
+    display: flex
+    flex-direction: row
+    align-items: center
+    &-percent
+      &--up
+        color: $LimeGreen
+      &--down
+        color: $BrightRed
+
+// || ICONS and SVG
+.icon
+  background-repeat: no-repeat
+  background-position: center center
+  width: 20px
+  height: 20px
+  &--up
+    background-image: url('../svg/icon-up.svg')
+    width: 8px
+    height: 4px
+  &--down
+    background-image: url('../svg/icon-down.svg')
+    width: 8px
+    height: 4px
+  &--facebook
+    background-image: url('../svg/icon-facebook.svg')
+  &--instagram
+    background-image: url('../svg/icon-instagram.svg')
+  &--twitter
+    background-image: url('../svg/icon-twitter.svg')
+  &--youtube
+    background-image: url('../svg/icon-youtube.svg')

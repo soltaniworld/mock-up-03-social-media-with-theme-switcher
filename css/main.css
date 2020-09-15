@@ -10,6 +10,30 @@
   font-size: 14px;
 }
 
+.text-blackwhite--light {
+  color: #1e202a;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.text-blackwhite--dark {
+  color: white;
+}
+
+.text-gray {
+  font-weight: 700;
+}
+
+.text-gray--light {
+  color: #63687e;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.text-gray--dark {
+  color: #8b97c6;
+}
+
 .attribution {
   display: none;
   font-size: 11px;
@@ -139,11 +163,23 @@
 
 .total {
   height: 110px;
-  border-bottom: 1px solid #000;
+}
+
+.total--light {
+  border-bottom: 1px solid #63687e;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.total--dark {
+  border-bottom: 1px solid #8b97c6;
 }
 
 .total-title {
   margin-top: 36px;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0px;
 }
 
 .total-follows {
@@ -199,7 +235,7 @@
 
 .card--dark {
   background: #252a41;
-  color: white;
+  color: #8b97c6;
 }
 
 .card--overall {
@@ -221,7 +257,7 @@
   margin-bottom: 0px;
 }
 
-.card .overall-social-handler {
+.overall-social-handler {
   margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,17 +266,24 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.card .overall-following {
+.overall-social-handler__icon {
+  margin-right: 8px;
+}
+
+.overall-following {
   margin-top: 28px;
 }
 
-.card .overall-following-title {
+.overall-following-title {
   margin-top: 9px;
 }
 
-.card .overall-change {
+.overall-change {
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,6 +292,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overall-change--up {
+  color: #1db489;
+}
+
+.overall-change--down {
+  color: #dc414c;
+}
+
+.overall-change-date {
+  margin-left: 4px;
+  font-size: 12px;
 }
 
 .overview-title {
@@ -287,5 +346,58 @@
   position: absolute;
   right: 31px;
   bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daily__stats-change-percent--up {
+  color: #1db489;
+}
+
+.daily__stats-change-percent--down {
+  color: #dc414c;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+}
+
+.icon--up {
+  background-image: url("../svg/icon-up.svg");
+  width: 8px;
+  height: 4px;
+}
+
+.icon--down {
+  background-image: url("../svg/icon-down.svg");
+  width: 8px;
+  height: 4px;
+}
+
+.icon--facebook {
+  background-image: url("../svg/icon-facebook.svg");
+}
+
+.icon--instagram {
+  background-image: url("../svg/icon-instagram.svg");
+}
+
+.icon--twitter {
+  background-image: url("../svg/icon-twitter.svg");
+}
+
+.icon--youtube {
+  background-image: url("../svg/icon-youtube.svg");
 }
 /*# sourceMappingURL=main.css.map */
