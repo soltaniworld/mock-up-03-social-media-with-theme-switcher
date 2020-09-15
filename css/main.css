@@ -31,6 +31,16 @@
   color: #8b97c6;
 }
 
+.text-graywhite--light {
+  color: #63687e;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.text-graywhite--dark {
+  color: white;
+}
+
 .attribution {
   display: none;
   font-size: 11px;
@@ -39,6 +49,24 @@
 
 .attribution a {
   color: #3e52a3;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    height: 100vh;
+  }
 }
 
 .toggle-switch {
@@ -150,11 +178,22 @@
 @media screen and (min-width: 500px) {
   .wrapper {
     padding: 0 165px 0 165px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 .wrapper--main {
   height: 191px;
+}
+
+@media screen and (min-width: 500px) {
+  .wrapper--main {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .total {
@@ -200,6 +239,12 @@
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 500px) {
+  .card {
+    width: 255px;
+  }
 }
 
 .card-top {
@@ -287,6 +332,7 @@
   font-weight: 400;
   letter-spacing: 5px;
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 .overall-change {
@@ -319,6 +365,7 @@
 .overview-title {
   margin-top: 46px;
   margin-bottom: 27px;
+  font-size: 24px;
 }
 
 .card--daily {
@@ -346,6 +393,7 @@
   position: absolute;
   bottom: 19px;
   left: 24px;
+  font-size: 32px;
 }
 
 .daily__stats-change {
@@ -362,6 +410,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.daily__stats-change-percent {
+  font-size: 12px;
 }
 
 .daily__stats-change-percent--up {

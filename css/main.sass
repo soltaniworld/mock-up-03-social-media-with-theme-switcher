@@ -12,9 +12,6 @@
   font-family: 'Inter', sans-serif
   font-size: 14px
   font-weight: 700
-  // Body Copy
-  // Font size (Overview Card Headings): 14px
-
 .text
   &-blackwhite
     &--light
@@ -28,6 +25,12 @@
       transition: $themeTransitionTime
     &--dark
       color: $d_Text_DesaturatedBlue
+  &-graywhite
+    &--light
+      color: $l_Text_DarkGrayishBlue
+      transition: $themeTransitionTime
+    &--dark
+      color: $d_Text_White
 // || FOOTNOTE
 // the very end, buttom of the page.
 .attribution 
@@ -37,7 +40,13 @@
 .attribution a 
   color: hsl(228, 45%, 44%)
 
-
+// || BODY CENTERING
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  @include setDesktop
+    height: 100vh
 // || TOGGLE SWITCH
 .toggle
   &-container
@@ -106,8 +115,15 @@
   z-index: 1
   @include setDesktop
     padding: 0 165px 0 165px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
   &--main
     height: 191px
+    @include setDesktop
+      // display: flex
+      // flex-direction: row
+      // justify-content: space-between
+      grid-template-columns: 1fr 1fr
 
 
 // || TITLE BAR WITH TOGGLE
@@ -137,6 +153,8 @@
   border-radius: 5px
   overflow: hidden
   // min-width: 326px
+  @include setDesktop
+    width: 255px
   &-top
     position: absolute
     top: 0px
@@ -186,6 +204,7 @@
       font-weight: 400
       letter-spacing: 5px
       text-transform: uppercase
+      font-size: 12px
   &-change
     margin-top: 25px
     display: flex
@@ -203,6 +222,7 @@
 .overview-title
   margin-top: 46px
   margin-bottom: 27px
+  font-size: 24px
 
 // || DAILY OVERVIEW CARDS
 .card
@@ -223,6 +243,7 @@
     position: absolute
     bottom: 19px
     left: 24px
+    font-size: 32px
   &__stats-change
     position: absolute
     right: 31px
@@ -231,6 +252,7 @@
     flex-direction: row
     align-items: center
     &-percent
+      font-size: 12px
       &--up
         color: $LimeGreen
       &--down
