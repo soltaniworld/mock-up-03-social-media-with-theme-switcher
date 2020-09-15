@@ -10,6 +10,7 @@ toggle.addEventListener('click', ()=>{
   });
 });
 
+toggle.click();
 
 //toggle its counterpart [class]--dark forEach class that ends with [class]--light
 // end = "--light"
